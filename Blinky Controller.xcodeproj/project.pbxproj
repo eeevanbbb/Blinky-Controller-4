@@ -11,6 +11,7 @@
 		209672061F27E55E0031ED4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209672051F27E55E0031ED4B /* Assets.xcassets */; };
 		209672091F27E55E0031ED4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209672071F27E55E0031ED4B /* LaunchScreen.storyboard */; };
 		209672111F27E65D0031ED4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209672101F27E65D0031ED4B /* HomeViewController.swift */; };
+		20F06F941F2AD45400B3A242 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 20F06F931F2AD45400B3A242 /* README.md */; };
 		20FEEB621F27F5C900131665 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB611F27F5C900131665 /* State.swift */; };
 		20FEEB651F27FB9500131665 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB641F27FB9500131665 /* Network.swift */; };
 		20FEEB671F27FD3A00131665 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB661F27FD3A00131665 /* Settings.swift */; };
@@ -29,6 +30,7 @@
 		209672081F27E55E0031ED4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2096720A1F27E55E0031ED4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209672101F27E65D0031ED4B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20F06F931F2AD45400B3A242 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20FEEB611F27F5C900131665 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		20FEEB641F27FB9500131665 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		20FEEB661F27FD3A00131665 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		209671F21F27E55E0031ED4B = {
 			isa = PBXGroup;
 			children = (
+				20F06F931F2AD45400B3A242 /* README.md */,
 				209671FD1F27E55E0031ED4B /* Blinky Controller */,
 				209671FC1F27E55E0031ED4B /* Products */,
 				4EE70296AE8CC3272C499507 /* Pods */,
@@ -270,6 +273,7 @@
 				20FEEB691F281DD200131665 /* Tasks.swift in Sources */,
 				20FEEB721F2AB03C00131665 /* Reachability.m in Sources */,
 				20FEEB741F2AB04C00131665 /* Reachability.swift in Sources */,
+				20F06F941F2AD45400B3A242 /* README.md in Sources */,
 				20FEEB671F27FD3A00131665 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
