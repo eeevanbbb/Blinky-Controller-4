@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Build the window
+        let homeVC = HomeViewController()
+        let navController = UINavigationController(rootViewController: homeVC)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            window.backgroundColor = UIColor.white
+            window.rootViewController = navController
+            window.makeKeyAndVisible()
+        }
+        
+        // Register defaults settings
+        Defaults.registerDefault(.ipAddress, "192.168.1.85")
+        Defaults.registerDefault(.port, "9001")
+        Defaults.registerDefault(.pollingInterval, 2.0)
+        
+        // Get initial state
+        StateManager.sharedInstance.refreshState()
+        
+        // Start timers
+        TaskManager.sharedInstance.startTimers()
+        
+        // Monitor reachability
+        ReachabilityManager.sharedInstance.reachabilitySignal.subscribe(on: self) { reachability in
+            if reachability != .ReachableViaWiFi {
+                ErrorHandler.showWiFiMessage()
+            } else {
+                ErrorHandler.hideWiFiMessage()
+            }
+        }
+        ReachabilityManager.sharedInstance.beginObservingReachability()
+                
         return true
     }
 

@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		209671FF1F27E55E0031ED4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209671FE1F27E55E0031ED4B /* AppDelegate.swift */; };
-		209672011F27E55E0031ED4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209672001F27E55E0031ED4B /* ViewController.swift */; };
-		209672041F27E55E0031ED4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209672021F27E55E0031ED4B /* Main.storyboard */; };
 		209672061F27E55E0031ED4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209672051F27E55E0031ED4B /* Assets.xcassets */; };
 		209672091F27E55E0031ED4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209672071F27E55E0031ED4B /* LaunchScreen.storyboard */; };
+		209672111F27E65D0031ED4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209672101F27E65D0031ED4B /* HomeViewController.swift */; };
+		20FEEB621F27F5C900131665 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB611F27F5C900131665 /* State.swift */; };
+		20FEEB651F27FB9500131665 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB641F27FB9500131665 /* Network.swift */; };
+		20FEEB671F27FD3A00131665 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB661F27FD3A00131665 /* Settings.swift */; };
+		20FEEB691F281DD200131665 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB681F281DD200131665 /* Tasks.swift */; };
+		20FEEB6B1F29255900131665 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB6A1F29255900131665 /* ColorViewController.swift */; };
+		20FEEB6D1F2A658300131665 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB6C1F2A658300131665 /* Errors.swift */; };
+		20FEEB721F2AB03C00131665 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB711F2AB03C00131665 /* Reachability.m */; };
+		20FEEB741F2AB04C00131665 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEEB731F2AB04C00131665 /* Reachability.swift */; };
+		EA37CFFD0DEF68BF42B4A77B /* Pods_Blinky_Controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5671E924CD890E4F2079A48 /* Pods_Blinky_Controller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		209671FB1F27E55E0031ED4B /* Blinky Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209671FE1F27E55E0031ED4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		209672001F27E55E0031ED4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		209672031F27E55E0031ED4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209672051F27E55E0031ED4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209672081F27E55E0031ED4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2096720A1F27E55E0031ED4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209672101F27E65D0031ED4B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20FEEB611F27F5C900131665 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		20FEEB641F27FB9500131665 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		20FEEB661F27FD3A00131665 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		20FEEB681F281DD200131665 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		20FEEB6A1F29255900131665 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		20FEEB6C1F2A658300131665 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		20FEEB6F1F2AB03C00131665 /* Blinky Controller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blinky Controller-Bridging-Header.h"; sourceTree = "<group>"; };
+		20FEEB701F2AB03C00131665 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		20FEEB711F2AB03C00131665 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		20FEEB731F2AB04C00131665 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		51E5371F54FE047604977044 /* Pods-Blinky Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blinky Controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blinky Controller/Pods-Blinky Controller.release.xcconfig"; sourceTree = "<group>"; };
+		552A7952DDD596C00D68668A /* Pods-Blinky Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blinky Controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blinky Controller/Pods-Blinky Controller.debug.xcconfig"; sourceTree = "<group>"; };
+		C5671E924CD890E4F2079A48 /* Pods_Blinky_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blinky_Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA37CFFD0DEF68BF42B4A77B /* Pods_Blinky_Controller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,8 @@
 			children = (
 				209671FD1F27E55E0031ED4B /* Blinky Controller */,
 				209671FC1F27E55E0031ED4B /* Products */,
+				4EE70296AE8CC3272C499507 /* Pods */,
+				55A6914F753543D13FF342C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,64 @@
 		209671FD1F27E55E0031ED4B /* Blinky Controller */ = {
 			isa = PBXGroup;
 			children = (
+				20FEEB601F27F4D200131665 /* Model */,
+				20FEEB5E1F27EE6800131665 /* View Controllers */,
 				209671FE1F27E55E0031ED4B /* AppDelegate.swift */,
-				209672001F27E55E0031ED4B /* ViewController.swift */,
-				209672021F27E55E0031ED4B /* Main.storyboard */,
 				209672051F27E55E0031ED4B /* Assets.xcassets */,
 				209672071F27E55E0031ED4B /* LaunchScreen.storyboard */,
 				2096720A1F27E55E0031ED4B /* Info.plist */,
 			);
 			path = "Blinky Controller";
+			sourceTree = "<group>";
+		};
+		20FEEB5E1F27EE6800131665 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				209672101F27E65D0031ED4B /* HomeViewController.swift */,
+				20FEEB6A1F29255900131665 /* ColorViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		20FEEB601F27F4D200131665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20FEEB6E1F2AB00D00131665 /* Reachability */,
+				20FEEB611F27F5C900131665 /* State.swift */,
+				20FEEB641F27FB9500131665 /* Network.swift */,
+				20FEEB661F27FD3A00131665 /* Settings.swift */,
+				20FEEB681F281DD200131665 /* Tasks.swift */,
+				20FEEB6C1F2A658300131665 /* Errors.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20FEEB6E1F2AB00D00131665 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				20FEEB701F2AB03C00131665 /* Reachability.h */,
+				20FEEB711F2AB03C00131665 /* Reachability.m */,
+				20FEEB6F1F2AB03C00131665 /* Blinky Controller-Bridging-Header.h */,
+				20FEEB731F2AB04C00131665 /* Reachability.swift */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		4EE70296AE8CC3272C499507 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				552A7952DDD596C00D68668A /* Pods-Blinky Controller.debug.xcconfig */,
+				51E5371F54FE047604977044 /* Pods-Blinky Controller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55A6914F753543D13FF342C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5671E924CD890E4F2079A48 /* Pods_Blinky_Controller.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2096720D1F27E55E0031ED4B /* Build configuration list for PBXNativeTarget "Blinky Controller" */;
 			buildPhases = (
+				06A2C88389AEA4D70926A3A7 /* [CP] Check Pods Manifest.lock */,
 				209671F71F27E55E0031ED4B /* Sources */,
 				209671F81F27E55E0031ED4B /* Frameworks */,
 				209671F91F27E55E0031ED4B /* Resources */,
+				2122EE2AF86B97AC3F34485C /* [CP] Embed Pods Frameworks */,
+				1E9F54D51A59124AC5340305 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +173,7 @@
 					209671FA1F27E55E0031ED4B = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = SSVV96L8NH;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,33 +203,80 @@
 			files = (
 				209672091F27E55E0031ED4B /* LaunchScreen.storyboard in Resources */,
 				209672061F27E55E0031ED4B /* Assets.xcassets in Resources */,
-				209672041F27E55E0031ED4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06A2C88389AEA4D70926A3A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E9F54D51A59124AC5340305 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blinky Controller/Pods-Blinky Controller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2122EE2AF86B97AC3F34485C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blinky Controller/Pods-Blinky Controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		209671F71F27E55E0031ED4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209672011F27E55E0031ED4B /* ViewController.swift in Sources */,
 				209671FF1F27E55E0031ED4B /* AppDelegate.swift in Sources */,
+				209672111F27E65D0031ED4B /* HomeViewController.swift in Sources */,
+				20FEEB651F27FB9500131665 /* Network.swift in Sources */,
+				20FEEB621F27F5C900131665 /* State.swift in Sources */,
+				20FEEB6D1F2A658300131665 /* Errors.swift in Sources */,
+				20FEEB6B1F29255900131665 /* ColorViewController.swift in Sources */,
+				20FEEB691F281DD200131665 /* Tasks.swift in Sources */,
+				20FEEB721F2AB03C00131665 /* Reachability.m in Sources */,
+				20FEEB741F2AB04C00131665 /* Reachability.swift in Sources */,
+				20FEEB671F27FD3A00131665 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		209672021F27E55E0031ED4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				209672031F27E55E0031ED4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		209672071F27E55E0031ED4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,26 +385,37 @@
 		};
 		2096720E1F27E55E0031ED4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552A7952DDD596C00D68668A /* Pods-Blinky Controller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SSVV96L8NH;
 				INFOPLIST_FILE = "Blinky Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.evanb.Blinky-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = io.evanb.BlinkyController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Blinky Controller/Blinky Controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2096720F1F27E55E0031ED4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E5371F54FE047604977044 /* Pods-Blinky Controller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SSVV96L8NH;
 				INFOPLIST_FILE = "Blinky Controller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.evanb.Blinky-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = io.evanb.BlinkyController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Blinky Controller/Blinky Controller-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +439,7 @@
 				2096720F1F27E55E0031ED4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
