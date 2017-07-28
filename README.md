@@ -32,17 +32,17 @@ Toggle the switch to `Show Advanced Settings`. Here, a user can change the `IP A
 
 Big thanks to the following `Cocoapods` used in this app:
 
-- [Hue] (https://github.com/hyperoslo/Hue)
-- [Chroma Color Picker] (https://github.com/joncardasis/ChromaColorPicker)
-- [Swifty Timer] (https://github.com/radex/SwiftyTimer)
-- [Swifty User Defaults] (https://github.com/radex/SwiftyUserDefaults#installation)
-- [Eureka] (https://github.com/xmartlabs/Eureka)
-- [Signals] (https://github.com/artman/Signals)
-- [Chameleon] (https://github.com/ViccAlexander/Chameleon)
-- [SwiftMessages] (https://github.com/SwiftKickMobile/SwiftMessages)
-- [IHKeyboardAvoiding] (https://github.com/IdleHandsApps/IHKeyboardAvoiding)
-- [Alamofire] (https://github.com/Alamofire/Alamofire)
-- [BusyNavigationBar] (https://github.com/gmertk/BusyNavigationBar)
+- [Hue](https://github.com/hyperoslo/Hue)
+- [Chroma Color Picker](https://github.com/joncardasis/ChromaColorPicker)
+- [Swifty Timer](https://github.com/radex/SwiftyTimer)
+- [Swifty User Defaults](https://github.com/radex/SwiftyUserDefaults#installation)
+- [Eureka](https://github.com/xmartlabs/Eureka)
+- [Signals](https://github.com/artman/Signals)
+- [Chameleon](https://github.com/ViccAlexander/Chameleon)
+- [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
+- [IHKeyboardAvoiding](https://github.com/IdleHandsApps/IHKeyboardAvoiding)
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+- [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar)
 
 Please note that some of these pods have been modified in this project, so reinstalling them will cause the project not to build.
 
