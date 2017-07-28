@@ -127,6 +127,15 @@ class HomeViewController: FormViewController {
                 })
             }
             +++ Section("Advanced")
+            <<< SwitchRow("AdvancedSwitchRow") { row in
+                row.title = "Show Advanced Settings"
+                DispatchQueue.main.async {
+                    row.cell.switchControl.isOn = Defaults[.showAdvancedSettings]
+                }
+                row.onChange { row in
+                    Defaults[.showAdvancedSettings] = row.cell.switchControl.isOn
+                }
+            }
             <<< TextRow() { row in
                 row.title = "IP Address"
                 row.value = Defaults[.ipAddress]
@@ -149,6 +158,9 @@ class HomeViewController: FormViewController {
                     DispatchQueue.main.async {
                         cell.textField.textColor = row.isValid ? UIColor.black : UIColor.red
                     }
+                }
+                row.hidden = Condition.function(["AdvancedSwitchRow"]) { form in
+                    return !Defaults[.showAdvancedSettings]
                 }
             }
             <<< TextRow() { row in
@@ -175,6 +187,9 @@ class HomeViewController: FormViewController {
                         cell.textField.textColor = row.isValid ? UIColor.black : UIColor.red
                     }
                 }
+                row.hidden = Condition.function(["AdvancedSwitchRow"]) { form in
+                    return !Defaults[.showAdvancedSettings]
+                }
             }
             <<< StepperRow() {
                 $0.title = "Polling Interval"
@@ -184,6 +199,9 @@ class HomeViewController: FormViewController {
                 $0.cell.stepper.stepValue = 0.5
                 $0.onChange { row in
                     TaskManager.sharedInstance.updatePollingInterval(row.cell.stepper.value)
+                }
+                $0.hidden = Condition.function(["AdvancedSwitchRow"]) { form in
+                    return !Defaults[.showAdvancedSettings]
                 }
             }
         

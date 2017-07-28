@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Defaults.registerDefault(.ipAddress, "192.168.1.85")
         Defaults.registerDefault(.port, "9001")
         Defaults.registerDefault(.pollingInterval, 2.0)
+        Defaults.registerDefault(.showAdvancedSettings, false)
         
         // Get initial state
         StateManager.sharedInstance.refreshState()

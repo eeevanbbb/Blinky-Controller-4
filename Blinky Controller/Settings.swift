@@ -13,6 +13,7 @@ extension DefaultsKeys {
     static let ipAddress = DefaultsKey<String>("ipAddress")
     static let port = DefaultsKey<String>("port")
     static let pollingInterval = DefaultsKey<Double>("pollingInterval")
+    static let showAdvancedSettings = DefaultsKey<Bool>("showAdvancedSettings")
 }
 
 extension UserDefaults {
