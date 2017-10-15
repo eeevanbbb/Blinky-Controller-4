@@ -18,20 +18,21 @@ class NetworkManager {
         return "http://" + Defaults[.ipAddress] + ":" + Defaults[.port] + "/"
     }
     
-    public func getState(completion: @escaping ([Int]?, Double?, Bool?, String?, [String]?, Double?, Double?) -> Void) {
+    public func getState(completion: @escaping ([Int]?, Double?, Bool?, Bool?, String?, [String]?, Double?, Double?) -> Void) {
         Alamofire.request(baseURL + "state").responseJSON { response in
             if let JSON = response.result.value as? [String: AnyObject] {
                 let color = JSON["color"] as? [Int]
                 let speed = JSON["speed"] as? Double
                 let dynaColor = JSON["dyna_color"] as? Bool
+                let isReverse = JSON["is_reverse"] as? Bool
                 let command = JSON["command"] as? String
                 let commands = JSON["commands"] as? [String]
                 let minSpeed = JSON["min_speed"] as? Double
                 let maxSpeed = JSON["max_speed"] as? Double
                 
-                completion(color, speed, dynaColor, command, commands, minSpeed, maxSpeed)
+                completion(color, speed, dynaColor, isReverse, command, commands, minSpeed, maxSpeed)
             } else {
-                completion(nil, nil, nil, nil, nil, nil, nil)
+                completion(nil, nil, nil, nil, nil, nil, nil, nil)
             }
             
             switch response.result {
@@ -43,7 +44,7 @@ class NetworkManager {
         }
     }
     
-    public func update(color: [Int]? = nil, speed: Double? = nil, dynaColor: Bool? = nil, command: String? = nil, completion: (() -> ())? = nil) {
+    public func update(color: [Int]? = nil, speed: Double? = nil, dynaColor: Bool? = nil, isReverse: Bool? = nil, command: String? = nil, completion: (() -> ())? = nil) {
         var parameters = [String: Any]()
         if let color = color {
             parameters["color"] = color
@@ -53,6 +54,9 @@ class NetworkManager {
         }
         if let dynaColor = dynaColor {
             parameters["dynamic_color"] = dynaColor
+        }
+        if let isReverse = isReverse {
+            parameters["is_reverse"] = isReverse
         }
         if let command = command {
             parameters["command"] = command

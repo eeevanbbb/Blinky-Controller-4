@@ -15,6 +15,7 @@ private struct State {
     var color: [Int] = [0,0,0]
     var speed: Double = 0.0
     var dynaColor: Bool = false
+    var isReverse: Bool = false
     var command: String = "None"
     
     var availableCommands: [String] = []
@@ -50,7 +51,7 @@ class StateManager {
     private var state = State() // TODO: Load from user defaults?
     
     public var stateSignal = Signal<Void>()
-    public func update(color: [Int]? = nil, uiColor: UIColor? = nil, speed: Double? = nil, dynaColor: Bool? = nil, command: String? = nil) {
+    public func update(color: [Int]? = nil, uiColor: UIColor? = nil, speed: Double? = nil, dynaColor: Bool? = nil, isReverse: Bool? = nil, command: String? = nil) {
         if let color = color {
             state.color = color
         }
@@ -62,6 +63,9 @@ class StateManager {
         }
         if let dynaColor = dynaColor {
             state.dynaColor = dynaColor
+        }
+        if let isReverse = isReverse {
+            state.isReverse = isReverse
         }
         if let command = command {
             state.command = command
@@ -82,6 +86,10 @@ class StateManager {
         return state.dynaColor
     }
     
+    public var isReverse: Bool {
+        return state.isReverse
+    }
+    
     public var command: String {
         return state.command
     }
@@ -99,8 +107,8 @@ class StateManager {
     }
     
     public func refreshState() {
-        NetworkManager.sharedInstance.getState { color, speed, dynaColor, command, commands, minSpeed, maxSpeed in
-            self.update(color: color, speed: speed, dynaColor: dynaColor, command: command)
+        NetworkManager.sharedInstance.getState { color, speed, dynaColor, isReverse, command, commands, minSpeed, maxSpeed  in
+            self.update(color: color, speed: speed, dynaColor: dynaColor, isReverse: isReverse, command: command)
             if let commands = commands {
                 self.state.availableCommands = commands
             }
@@ -113,13 +121,13 @@ class StateManager {
         }
     }
     
-    public func sendUpdate(color: [Int]? = nil, uiColor: UIColor? = nil, speed: Double? = nil, dynaColor: Bool? = nil, command: String? = nil, completion: (() -> ())? = nil) {
-        NetworkManager.sharedInstance.update(color: color ?? uiColor?.rgbIntColor, speed: speed, dynaColor: dynaColor, command: command) {
+    public func sendUpdate(color: [Int]? = nil, uiColor: UIColor? = nil, speed: Double? = nil, dynaColor: Bool? = nil, isReverse: Bool? = nil, command: String? = nil, completion: (() -> ())? = nil) {
+        NetworkManager.sharedInstance.update(color: color ?? uiColor?.rgbIntColor, speed: speed, dynaColor: dynaColor, isReverse: isReverse, command: command) {
             // Fail gracefully?
             completion?()
         }
         
         // Optimistically update the UI
-        update(color: color, uiColor: uiColor, speed: speed, dynaColor: dynaColor, command: command)
+        update(color: color, uiColor: uiColor, speed: speed, dynaColor: dynaColor, isReverse: isReverse, command: command)
     }
 }

@@ -126,6 +126,19 @@ class HomeViewController: FormViewController {
                         let _ = vc.navigationController?.popViewController(animated: true)
                 })
             }
+            <<< SwitchRow("ReverseRow") { row in
+                row.tag = "ReversedRow"
+                row.title = "Reversed"
+                DispatchQueue.main.async {
+                    row.cell.switchControl.isOn = StateManager.sharedInstance.isReverse
+                }
+                row.onChange { row in
+                    self.startNavBarLoadingAnimation()
+                    StateManager.sharedInstance.sendUpdate(isReverse: row.cell.switchControl.isOn) {
+                        self.stopNavBarLoadingAnimation()
+                    }
+                }
+            }
             +++ Section("Advanced")
             <<< SwitchRow("AdvancedSwitchRow") { row in
                 row.title = "Show Advanced Settings"
@@ -224,6 +237,10 @@ class HomeViewController: FormViewController {
                 if let colorRow = self.form.rowBy(tag: "ColorRow") as? DetailedButtonRow {
                     colorRow.cell.detailTextLabel?.text = StateManager.sharedInstance.color.hex(true)
                     colorRow.cell.detailTextLabel?.textColor = StateManager.sharedInstance.color
+                }
+                if let reversedRow = self.form.rowBy(tag: "ReversedRow") as? SwitchRow {
+                    reversedRow.cell.switchControl.isOn = StateManager.sharedInstance.isReverse
+                    reversedRow.reload()
                 }
                 self.stateChange = false
             }
